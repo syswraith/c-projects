@@ -7,6 +7,7 @@
    - while loop 
    - arithmatic operations
    - assignment
+   - float limitations
    Do not try writing it ((5/9)(fahr-32)) because 5/9 = 0.5555... and then multiplying fahr (int)
    with float gives a float output and celcius cannot be float
  */

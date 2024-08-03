@@ -7,3 +7,4 @@ Following the great book by the Masters:<br/>
 
 ## Contents:
 - [Hello World](https://github.com/syswraith/C-practice/blob/main/001_hello_word/hello_world.c)
+- [Temperature Converter](https://github.com/syswraith/C-practice/blob/main/002_temperature_converter.c)
