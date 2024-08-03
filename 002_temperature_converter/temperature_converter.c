@@ -8,6 +8,8 @@
    - arithmatic operations
    - assignment
    - float limitations
+   - right-justification and padding
+   - adding just the right amount of zeroes (001, 002, 012, 013, 120, 360)
    Do not try writing it ((5/9)(fahr-32)) because 5/9 = 0.5555... and then multiplying fahr (int)
    with float gives a float output and celcius cannot be float
  */
@@ -23,7 +25,7 @@ int main()
     while (fahr <= upper)
     {
 	celsius = (5 * (fahr-32) / 9);
-	printf("%d F\t %d C\n", fahr, celsius);
+	printf("%6.3d F\t %3d C\n", fahr, celsius);
 	fahr += step;
     }
     return 0;
