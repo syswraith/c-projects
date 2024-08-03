@@ -15,3 +15,10 @@ while (i< j)
     i = 2 * i
 /* Can be without braces if it is a single statement */ 
 ```
+```c
+printf("%3d", 1);
+/*       ^ 3 blank spaces and 1 is to the very right*/
+printf("%6d", 1);
+/*       ^ 3 blank spaces + 3 padding blank spaces = 6 blank spaces*/
+printf("%6.3", 1);
+/*       ^^^ 3 blank spaces + 3 padding spaces + .3 means 1 -> 001*/
