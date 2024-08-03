@@ -10,7 +10,7 @@ Following the great book by the Masters:<br/>
 - [ ] [Temperature Converter](https://github.com/syswraith/C-practice/blob/main/002_temperature_converter.c)
 
 ## Notes
-```
+```c
 while (i< j)
     i = 2 * i
 /* Can be without braces if it is a single statement */ 
