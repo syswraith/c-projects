@@ -1,4 +1,4 @@
-# C-practice
+# C Projects
 
 A repository for C practice.<br/>
 Managed entirely (for the first time) by git!<br/>
