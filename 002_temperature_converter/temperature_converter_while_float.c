@@ -1,3 +1,10 @@
+/*
+   Day 003: Temperature Converter
+   Things learned:
+   - Float
+   - Padding revision
+*/
+
 #include <stdio.h>
 
 int main()
