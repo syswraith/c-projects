@@ -9,6 +9,13 @@ Managed entirely (for the first time) by git!<br/>
 - [x] [Hello World](https://github.com/syswraith/C-practice/blob/main/001_hello_word/hello_world.c)
 - [x] [Temperature Converter](https://github.com/syswraith/C-practice/blob/main/002_temperature_converter.c)
 
+## Topics covered:
+- [x] Printing to stdout
+- [x] Basic arithmatic operations
+- [x] Variables
+- [x] While loop
+- [x] For loop
+
 ## Notes
 ```c
 while (i< j)
