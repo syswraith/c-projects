@@ -14,6 +14,7 @@ Managed entirely (for the first time) by git!<br/>
 - [x] Variables
 - [x] While loop
 - [x] For loop
+- [ ] Symbolic Constants
 
 ## Notes
 ```c
