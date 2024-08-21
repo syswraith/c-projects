@@ -15,7 +15,8 @@ Managed entirely (for the first time) by git!<br/>
 - [x] While loop
 - [x] For loop
 - [x] Symbolic Constants
-- [ ] Character I/O 
+- [x] Character I/O 
+- [ ] Array
 
 ## Notes
 ```c
