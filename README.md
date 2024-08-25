@@ -31,3 +31,9 @@ printf("%6d", 1);
 /*       ^ 3 blank spaces + 3 padding blank spaces = 6 blank spaces*/
 printf("%6.3", 1);
 /*       ^^^ 3 blank spaces + 3 padding spaces + .3 means 1 -> 001*/
+```
+```
+"C" ≠ 'C'
+"C" returns a string
+'C' returns the ASCII character code of C
+```
