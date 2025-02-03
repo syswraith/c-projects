@@ -9,12 +9,7 @@ int main()
 	for (int y = 0; y < 5; y++)
 	{
 
-	    if (x == y)
-	    {
-		continue;
-	    }
-
-	    else if (arr[x] == arr[y])
+	    if (x != y && arr[x] == arr[y])
 	    {
 		counter++;
 	    }
