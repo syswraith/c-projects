@@ -35,3 +35,15 @@ printf("%*.*d", 3,2,1);
 "C" returns a string
 'C' returns the ASCII character code of C
 ```
+```c
+// Macros
+
+#define dprint(expr) printf(#expr " %g\n", expr)
+
+dprint(3/2);
+
+// when dprint is called
+
+printf("3/2" " (evaluated expr)", expr);
+printf("3/2 (evaluated expr)", expr);
+```
