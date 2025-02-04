@@ -47,3 +47,18 @@ dprint(3/2);
 printf("3/2" " (evaluated expr)", expr);
 printf("3/2 (evaluated expr)", expr);
 ```
+Similarly, token pasting is done with dprint(A, B) A ## B will create a TOKEN
+this is NOT a string, this is a TOKEN
+```c
+#include <stdio.h>
+
+// Macro definition using the Token-pasting operator
+#define concat(a, b) a##b
+int main(void) {
+    int xy = 30;
+
+    // Printing the concatenated value of x and y
+    printf("%d", concat(x, y));
+    return 0;
+}
+```
