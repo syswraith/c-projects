@@ -4,6 +4,7 @@
 
 
 char moves[] = {' ', '.', 'o', '+', '=', '*', 'B', '0', 'X', '@', '%', '&', '#', '/', '^'};
+int board[HEIGHT][WIDTH] = {0};
 
 struct coordinates
 {
@@ -11,29 +12,54 @@ struct coordinates
     int y;
 };
 
-void Move(struct coordinates c)
+struct coordinates current_position = {5, 9}; 
+
+void Move(int move)
 {
-    
-    while (c.x != 0)
+    if (move == 0b00)
     {
-	printf(".\n");
-	c.x--;
+	current_position.x -= 1;
+	current_position.y -= 1;
     }
-    
-    while (c.y != 0)
+    else if (move == 0b01)
     {
-	printf(".");
-	c.y--;
+	current_position.x -= 1;
+	current_position.y += 1;
+    }
+    else if (move == 0b10)
+    {
+	current_position.x += 1;
+	current_position.y -= 1;
+    }
+    else 
+    {
+	current_position.x += 1;
+	current_position.y += 1;
     }
 
-    printf("x");
+    board[current_position.x][current_position.y] += 1;
 }
 
 
+void Draw()
+{
+    for (int x = 1; x <= HEIGHT; x++)
+    {
+	for (int y = 1; y <= WIDTH; y++)
+	{
+	    printf(" %c", moves[board[x][y]]);
+	}
+	printf("\n");
+    }
+}
+
 int main()
 {
-    struct coordinates center = {9, 5};
-    Move(center);
-    printf("\n");
+    board[current_position.x][current_position.y] += 1;
+    Move(0b10);
+    Move(0b01);
+    Draw();
+
+    printf("%d");
     return 0;
 }
