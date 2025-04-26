@@ -17,29 +17,34 @@ void Move(int move)
 {
     switch (move)
     {
+        // up left
         case 0:
-            if (current_position.x > 0 && current_position.y > 0) {
+            if (current_position.x == 0 && current_position.y!=0) current_position.y--;
+            else if (current_position.x > 0 && current_position.y > 0) {
                 current_position.x -= 1;
                 current_position.y -= 1;
             }
             break;
-
+        // up right
         case 1:
-            if (current_position.x > 0 && current_position.y < WIDTH-1) {
+            if (current_position.x == (WIDTH-1)) current_position.y--;
+            else if (current_position.x > 0 && current_position.y < WIDTH-1) {
                 current_position.x -= 1;
                 current_position.y += 1;
             }
             break;
-
+        // down left
         case 2:
-            if (current_position.x < HEIGHT-1 && current_position.y > 0) {
+            if (current_position.x == 0) current_position.y++;
+            else if (current_position.x < HEIGHT-1 && current_position.y > 0) {
                 current_position.x += 1;
                 current_position.y -= 1;
             }
             break;
-
+        // down right
         case 3:
-            if (current_position.x < HEIGHT-1 && current_position.y < WIDTH-1) {
+            if (current_position.x == (WIDTH-1)) current_position.y++;
+            else if (current_position.x < HEIGHT-1 && current_position.y < WIDTH-1) {
                 current_position.x += 1;
                 current_position.y += 1;
             }
