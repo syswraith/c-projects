@@ -10,7 +10,6 @@ char moves[] = {' ', '.', 'o', '+', '=', '*', 'B', '0', 'X', '@', '%', '&', '#',
 int board[HEIGHT][WIDTH] = {0};
 char binary[2048] = "";
 
-
 struct coordinates current_position = {5, 9};
 
 
@@ -53,9 +52,9 @@ void Move(int move)
 
 void Draw()
 {
-    for (int x = 1; x <= HEIGHT; x++)
+    for (int x = 0; x < HEIGHT; x++)
     {
-        for (int y = 1; y <= WIDTH; y++)
+        for (int y = 0; y < WIDTH; y++)
         {
             printf(" %c", moves[board[x][y]]);
         }
@@ -82,7 +81,6 @@ void Player()
 {
     for (int x = 0; x < (strlen(binary)-1); x+=2)
     {
-        printf("%c %c\n", binary[x], binary[x+1]);
         if (binary[x] == '0' && binary[x+1] == '0') Move(0);
         else if (binary[x] == '0' && binary[x+1] == '1') Move(1);
         else if (binary[x] == '1' && binary[x+1] == '0') Move(2);
