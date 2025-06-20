@@ -35,5 +35,9 @@ int main()
         temp = temp->next;
     }
 
+    free(n1);
+    free(n2);
+    free(n3);
+
     return 0;
 }
