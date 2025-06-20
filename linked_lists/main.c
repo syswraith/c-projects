@@ -28,7 +28,6 @@ int main()
 
     n1->next = n2;
     n2->next = n3;
-    n3->next = NULL;
 
     node_t* temp = n1;
     while (temp != NULL) {
