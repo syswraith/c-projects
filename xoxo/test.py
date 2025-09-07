@@ -7,7 +7,7 @@ while True:
 
     choice = random.choice(choices)
     if choice in nopls: 
-        pass
+        print(choice)
     else: 
         print(choice)
         nopls.append(choice)
