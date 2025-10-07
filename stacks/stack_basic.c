@@ -10,12 +10,7 @@ typedef struct {
 } Stack;
 
 
-void initialize(Stack *stack)
-{
-  stack->top = -1;
-}
-
-
+void initialize(Stack *stack) { stack->top = -1; }
 bool is_empty(Stack *stack) { return (stack->top == -1); }
 bool is_full(Stack *stack) { return (stack->top == MAX_ELEMENTS - 1); }
 
@@ -35,7 +30,7 @@ void push(Stack *stack, int element)
 
 }
 
-
+// pop an element off the top of the stack
 int pop(Stack *stack)
 {
   if (is_empty(stack)) 
@@ -50,6 +45,7 @@ int pop(Stack *stack)
 }
 
 
+// peek at the top of the stack
 int peek(Stack *stack)
 {
   if (is_empty(stack))
@@ -64,6 +60,7 @@ int peek(Stack *stack)
 }
 
 
+// dump the whole stack to stdout
 void print_stack(Stack *stack)
 {
   int counter = stack->top;
