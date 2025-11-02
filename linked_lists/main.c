@@ -2,42 +2,46 @@
 #include <stdlib.h>
 
 
-typedef struct Node {
-    int data;
-    struct Node *next;
+typedef struct node 
+{
+  int value;
+  struct node *next;
 } node_t;
 
 
-node_t* createNode(int value)
+void print_node(node_t *head)
 {
-    node_t* newNode = (node_t*) malloc(sizeof(node_t));
-    newNode->data = value;
-    newNode->next = NULL;
-    return newNode;
+  node_t *temp = head;
+  while (temp->next != NULL)
+  {
+    printf("%d->", temp->value);
+    temp = temp->next;
+  }
 }
 
 
-int main() 
+node_t* create_node(int value)
 {
-    node_t* n1;
-    node_t* n2;
-    node_t* n3;
-    n1 = createNode(1);
-    n2 = createNode(2);
-    n3 = createNode(3);
+  node_t *temp = calloc(1, sizeof(node_t));
+  temp->value = value;
+  temp->next = NULL;
+  return temp;
+}
 
-    n1->next = n2;
-    n2->next = n3;
 
-    node_t* temp = n1;
-    while (temp != NULL) {
-        printf("%d ", temp->data);
-        temp = temp->next;
-    }
+int main()
+{
+  node_t *head, *temp;
+  head = NULL;
+  
+  for (int i = 0; i < 25; i++)
+  {
+    temp = create_node(i);
+    temp->next = head;
+    head = temp;
 
-    free(n1);
-    free(n2);
-    free(n3);
 
-    return 0;
+  }
+
+  return 0;
 }
