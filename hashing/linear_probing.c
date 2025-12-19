@@ -7,7 +7,7 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX 10
+#define MAX 50
 
 typedef struct bucket_t {
   char *data;
@@ -100,17 +100,14 @@ void print_table() {
 int main(void) {
 
   init_table();
-  create_element("Lorem");
-  create_element("Ipsum");
-  create_element("Dolor");
-  create_element("Something");
-  create_element("Something");
-  create_element("Overflow");
-  create_element("Already");
-  create_element("!!!");
-  create_element("...");
-  create_element("...");
-  create_element("...");
+
+  int limit = 100;
+  while (limit--) {
+    char buff[100] = {0};
+    scanf("%99s", buff);
+    create_element(buff);
+  }
+
   print_table();
   delete_table();
   print_table();
