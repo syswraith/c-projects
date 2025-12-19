@@ -1,3 +1,7 @@
+// linear probing is basically checking the next bucket
+// doesnt solve primary clustering (clustering in one segment)
+// doesnt solve secondary clustering (elements following the same pattern)
+
 #include <float.h>
 #include <limits.h>
 #include <stdbool.h>
