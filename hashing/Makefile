@@ -7,4 +7,4 @@ CC=gcc
 	$(CC) -o $@ $^
 
 clean:
-	rm $(shell find . -type f -executable)
+	rm *.o
