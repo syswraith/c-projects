@@ -1,11 +1,10 @@
 # Instructions to run
 
-## Methods
+| Method name       | Description                                           |
 |-------------------|-------------------------------------------------------|
-| Chaining          | Uses linked list to resolve collisions.               |
-| Linear Probing    | Checks the next available bucket to handle collision. |
-| Quadratic Probing | Checks (bucket + probe^2) to handle collision.        |
-|-------------------|-------------------------------------------------------|
+| chaining          | Uses linked list to resolve collisions.               |
+| linear_probing    | Checks the next available bucket to handle collision. |
+| quadratic_probing | Checks (bucket + probe^2) to handle collision.        |
 
 1. First make the files
 
