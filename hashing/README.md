@@ -1,5 +1,6 @@
 # Instructions to run
 
+## Methods
 |-------------------|-------------------------------------------------------|
 | Chaining          | Uses linked list to resolve collisions.               |
 | Linear Probing    | Checks the next available bucket to handle collision. |
@@ -9,10 +10,11 @@
 1. First make the files
 
 ```bash
+make <method-name>
 ```
 
 2. Pipe the input into the executable
 
 ```bash
-cat input.txt | ./a.out
+cat input.txt | <executable-name>
 ```
