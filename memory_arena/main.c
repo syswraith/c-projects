@@ -5,7 +5,6 @@
 
 typedef struct {
   size_t size;
-  size_t initialOffset;
   size_t currentOffset;
   char *buffer;
 } Arena;
@@ -23,7 +22,6 @@ Arena *ArenaInit(size_t size) {
   // allocate the buffer to 1 byte (char) * number of elements (size)
   arenaPtr->buffer = calloc(size, sizeof(char));
   arenaPtr->size = size;
-  arenaPtr->initialOffset = 0;
   arenaPtr->currentOffset = 0;
 
   return arenaPtr;
